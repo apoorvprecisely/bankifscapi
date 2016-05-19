@@ -1,0 +1,13 @@
+/tmp
+/modules
+/lib
+/test-result
+/logs
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
