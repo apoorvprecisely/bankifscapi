@@ -41,3 +41,69 @@ New client attempting to connect on port: 58510-58491
 This client on port 58510 has uuid a3541779-6b37-46d0-9f46-d472768d1d0c configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
 Connected Clients: activator-f6641bce-4c5f-4af7-8adf-bb0cbe96a92b, play-fork-run-a3541779-6b37-46d0-9f46-d472768d1d0c
 Taking next connection to: 58491
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 58491
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 58491
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 58491
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 58491
+New client attempting to connect on port: 58642-58491
+  Address = /192.168.0.100:58491
+Handshake exception on socket: 58642
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 58491
+New client attempting to connect on port: 58643-58491
+  Address = /192.168.0.100:58491
+This client on port 58643 has uuid 4d961bc0-20ac-4de2-a5a9-07388ebf7f69 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-f6641bce-4c5f-4af7-8adf-bb0cbe96a92b, play-fork-run-4d961bc0-20ac-4de2-a5a9-07388ebf7f69
+Taking next connection to: 58491
+New client attempting to connect on port: 58648-58491
+  Address = /192.168.0.100:58491
+Handshake exception on socket: 58648
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 58491
+New client attempting to connect on port: 58649-58491
+  Address = /192.168.0.100:58491
+This client on port 58649 has uuid 4c983ec2-7e87-466d-b838-598d19a0e2d0 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-f6641bce-4c5f-4af7-8adf-bb0cbe96a92b, play-fork-run-4c983ec2-7e87-466d-b838-598d19a0e2d0
+Taking next connection to: 58491
+New client attempting to connect on port: 58653-58491
+  Address = /192.168.0.100:58491
+Handshake exception on socket: 58653
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 58491
+New client attempting to connect on port: 58654-58491
+  Address = /192.168.0.100:58491
+This client on port 58654 has uuid eb4b3422-d33a-4642-82b7-3ec41e426954 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-f6641bce-4c5f-4af7-8adf-bb0cbe96a92b, play-fork-run-eb4b3422-d33a-4642-82b7-3ec41e426954
+Taking next connection to: 58491
