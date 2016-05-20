@@ -64,9 +64,22 @@ console.log(JSON.stringify(options));
 
 var ul = $('<ul>').appendTo('body');
 $(options).each(function(index, item) {
+
+
     ul.append(
         $(document.createElement('li')).text(item['ifsc'])
     );
+    ul.append(
+        $(document.createElement('li')).text(item['bank_name'])
+    );
+    ul.append(
+        $(document.createElement('li')).text(item['branch'])
+    );
+    ul.append(
+        $(document.createElement('li')).text(item['city'])
+    );
+
+
 });
 
 
