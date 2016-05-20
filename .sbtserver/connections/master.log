@@ -1,13 +1,13 @@
-New log file opened at Fri May 20 14:46:48 IST 2016 by 11015@Apoorvs-MacBook-Pro.local
-Taking next connection to: 57209
-New client attempting to connect on port: 57210-57209
-  Address = /192.168.0.101:57209
-This client on port 57210 has uuid aa23526c-0038-4a6b-a54f-10198a4e9d1f configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-aa23526c-0038-4a6b-a54f-10198a4e9d1f
-Taking next connection to: 57209
-New client attempting to connect on port: 57270-57209
-  Address = /192.168.0.101:57209
-Handshake exception on socket: 57270
+New log file opened at Fri May 20 15:57:32 IST 2016 by 11731@Apoorvs-MacBook-Pro.local
+Taking next connection to: 57820
+New client attempting to connect on port: 57821-57820
+  Address = /192.168.0.100:57820
+This client on port 57821 has uuid e083ba95-e917-475b-b0b7-bdafc64d6960 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-e083ba95-e917-475b-b0b7-bdafc64d6960
+Taking next connection to: 57820
+New client attempting to connect on port: 57826-57820
+  Address = /192.168.0.100:57820
+Handshake exception on socket: 57826
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -17,63 +17,60 @@ Caused by: java.io.EOFException
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 57209
-New client attempting to connect on port: 57271-57209
-  Address = /192.168.0.101:57209
-This client on port 57271 has uuid fd09b39c-12af-478a-910a-6b63a808cd5e configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-aa23526c-0038-4a6b-a54f-10198a4e9d1f, play-fork-run-fd09b39c-12af-478a-910a-6b63a808cd5e
-Taking next connection to: 57209
+Taking next connection to: 57820
+New client attempting to connect on port: 57827-57820
+  Address = /192.168.0.100:57820
+This client on port 57827 has uuid 8c66503c-018f-48eb-ada3-166781d1df33 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-e083ba95-e917-475b-b0b7-bdafc64d6960, play-fork-run-8c66503c-018f-48eb-ada3-166781d1df33
+Taking next connection to: 57820
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57209
+Taking next connection to: 57820
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57209
+Taking next connection to: 57820
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57209
+Taking next connection to: 57820
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57209
+Taking next connection to: 57820
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57209
+Taking next connection to: 57820
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57209
+Taking next connection to: 57820
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57209
+Taking next connection to: 57820
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57209
+Taking next connection to: 57820
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57209
+Taking next connection to: 57820
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57209
-New client attempting to connect on port: 57543-57209
-  Address = /192.168.0.101:57209
-Handshake exception on socket: 57543
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(DataInputStream.java:392)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 57209
-New client attempting to connect on port: 57544-57209
-  Address = /192.168.0.101:57209
-This client on port 57544 has uuid b36ef58a-5669-4968-a764-56f8370d23cb configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-aa23526c-0038-4a6b-a54f-10198a4e9d1f, play-fork-run-b36ef58a-5669-4968-a764-56f8370d23cb
-Taking next connection to: 57209
+Taking next connection to: 57820
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57209
+Taking next connection to: 57820
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 57209
+Taking next connection to: 57820
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 57820
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 57820
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 57820
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 57820
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 57820

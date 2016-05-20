@@ -11,12 +11,22 @@
 <head>
     @* Here's where we render the page title `String`. *@
     <title>@title</title>
-
-    <title>jQuery UI Autocomplete: Using Label-Value Pairs</title>
+      <link href="http://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css" rel="stylesheet">
     <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/ui-darkness/jquery-ui.min.css" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+<style>
+table, th, td {
+    border: 1px solid blue;
+    border-collapse: collapse;
+    font-size: 10pt;
+    color: #212121;
+}
+th, td {
+    padding: 5px;
+}
 
+</style>
 </head>
 <body>
 <script>
@@ -53,7 +63,7 @@ value: i.city
 
 });
 $( "#cityNames" ).autocomplete({
-   delay: 100,
+   delay: 200,
    source: myjson,
    select: function(event,ui)
    {
@@ -62,22 +72,13 @@ $( "#cityNames" ).autocomplete({
     $.getJSON(url, function(options) {
 console.log(JSON.stringify(options));
 
-var ul = $('<br/><ul>').appendTo('body');
 $(options).each(function(index, item) {
 
-
-    ul.append(
-        $(document.createElement('li')).text(item['ifsc'])
-    );
-    ul.append(
-        $(document.createElement('li')).text(item['bank_name'])
-    );
-    ul.append(
-        $(document.createElement('li')).text(item['branch'])
-    );
-    ul.append(
-        $(document.createElement('li')).text(item['city'])
-    );
+        $("body").append("<div><table border='1'  style='width:400px'><tr bgcolor='#536DFE'><td> IFSC : "+item['ifsc']+
+            "</td></tr><tr><td> BANK : "+item['bank_name']+
+            "</td></tr><tr><td> BRANCH : "+item['branch']+
+            "</td></tr><tr><td> CITY : "+item['city']+
+            "</td></tr></table><br/></div>");
 
 
 });
@@ -97,5 +98,6 @@ $(options).each(function(index, item) {
     <option>Choose a bank</option>
 </select>
 City <input id="cityNames" type="text" placeholder="Cities for the bank" name="code">
+<br/><br/><br/><br/><br/>
 </body>
 </html>
