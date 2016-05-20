@@ -1,5 +1,6 @@
 import javax.inject.*;
 import play.*;
+import play.filters.gzip.GzipFilter;
 import play.mvc.EssentialFilter;
 import play.http.HttpFilters;
 import play.mvc.*;
@@ -20,7 +21,11 @@ public class Filters implements HttpFilters {
 
     private final Environment env;
     private final EssentialFilter exampleFilter;
-
+    @Inject
+    GzipFilter gzipFilter;
+    public EssentialFilter[] filters() {
+        return new EssentialFilter[] { gzipFilter.asJava() };
+    }
     /**
      * @param env Basic environment settings for the current application.
      * @param exampleFilter A demonstration filter that adds a header to
@@ -30,17 +35,4 @@ public class Filters implements HttpFilters {
         this.env = env;
         this.exampleFilter = exampleFilter;
     }
-
-    @Override
-    public EssentialFilter[] filters() {
-      // Use the example filter if we're running development mode. If
-      // we're running in production or test mode then don't use any
-      // filters at all.
-      if (env.mode().equals(Mode.DEV)) {
-          return new EssentialFilter[] { exampleFilter };
-      } else {
-         return new EssentialFilter[] {};      
-      }
-    }
-
 }
