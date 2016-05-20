@@ -1,23 +1,88 @@
 @*
- * This template is called from the `index` template. This template
- * handles the rendering of the page header and body tags. It takes
- * two arguments, a `String` for the title of the page and an `Html`
- * object to insert into the body of the page.
- *@
+* This template is called from the `index` template. This template
+* handles the rendering of the page header and body tags. It takes
+* two arguments, a `String` for the title of the page and an `Html`
+* object to insert into the body of the page.
+*@
 @(title: String)(content: Html)
 
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        @* Here's where we render the page title `String`. *@
-        <title>@title</title>
-        <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/main.css")">
-        <link rel="shortcut icon" type="image/png" href="@routes.Assets.versioned("images/favicon.png")">
-        <script src="@routes.Assets.versioned("javascripts/hello.js")" type="text/javascript"></script>
-    </head>
-    <body>
-        @* And here's where we render the `Html` object containing
-         * the page content. *@
-        @content
-    </body>
+<head>
+    @* Here's where we render the page title `String`. *@
+    <title>@title</title>
+
+    <title>jQuery UI Autocomplete: Using Label-Value Pairs</title>
+    <link href="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/themes/ui-darkness/jquery-ui.min.css" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.1/jquery-ui.min.js"></script>
+
+</head>
+<body>
+<script>
+
+$(function(){
+    $.getJSON('/api/bank', function(options) {
+var select = document.getElementById('banklist');
+for(var i=0;i<options.length;i++)
+{
+var json=options[i];
+var obj=json['name'];
+var el=document.createElement('option');
+el.textContent=obj;
+el.value=obj;
+select.appendChild(el);
+}
+
+
+});
+});
+
+function leaveChange(dropdown) {
+    var value = dropdown.options[dropdown.selectedIndex].value;
+var myjson;
+var dropurl="/api/bank/"+value+"/city";
+$.getJSON(dropurl, function(json){
+
+var myjson = $.map(json, function(i){
+return {
+label: i.city,
+value: i.city
+};
+
+
+});
+$( "#cityNames" ).autocomplete({
+   delay: 100,
+   source: myjson,
+   select: function(event,ui)
+   {
+    var city=ui.item.value;
+    var url="/api/bank/"+value+"/city/"+city+"/branch";
+    $.getJSON(url, function(options) {
+console.log(JSON.stringify(options));
+
+var ul = $('<ul>').appendTo('body');
+$(options).each(function(index, item) {
+    ul.append(
+        $(document.createElement('li')).text(item['ifsc'])
+    );
+});
+
+
+
+});
+
+   }
+});
+});
+}
+
+</script>
+
+<select id="banklist" onchange="leaveChange(this)">
+    <option>Choose a bank</option>
+</select>
+City <input id="cityNames" type="text" placeholder="Cities for the bank" name="code">
+</body>
 </html>
