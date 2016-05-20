@@ -254,3 +254,107 @@ Copy resource mappings:
 Total time: 1 s, completed 20 May, 2016 3:16:31 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> {file:/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@44da480f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/application.conf,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/application.conf)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/evolutions,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/evolutions)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/logback.xml,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/logback.xml)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/routes,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/routes)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/evolutions/default,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/evolutions/default)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/evolutions/default/1.sql,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed 20 May, 2016 3:20:25 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@5d1e8b7, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed 20 May, 2016 3:20:40 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 1
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@73ab77ae, check cycles: false
+Total time: 0 s, completed 20 May, 2016 3:20:40 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@528ee27e, check cycles: false
+Total time: 0 s, completed 20 May, 2016 3:20:41 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/}myProject/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@3cefce7e, check cycles: false
+Total time: 0 s, completed 20 May, 2016 3:20:45 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@17d57937, check cycles: false
+Total time: 0 s, completed 20 May, 2016 3:20:47 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1b356714, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/application.conf,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/application.conf)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/evolutions,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/evolutions)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/logback.xml,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/logback.xml)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/routes,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/routes)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/evolutions/default,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/evolutions/default)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/evolutions/default/1.sql,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 2 s, completed 20 May, 2016 3:23:54 PM
+> server-post-command-cleanup
+> server-handle-next-server-request

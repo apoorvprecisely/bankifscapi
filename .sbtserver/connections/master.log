@@ -53,3 +53,24 @@ Taking next connection to: 57209
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
 Taking next connection to: 57209
+New client attempting to connect on port: 57543-57209
+  Address = /192.168.0.101:57209
+Handshake exception on socket: 57543
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.io.EOFException
+	at java.io.DataInputStream.readInt(DataInputStream.java:392)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 57209
+New client attempting to connect on port: 57544-57209
+  Address = /192.168.0.101:57209
+This client on port 57544 has uuid b36ef58a-5669-4968-a764-56f8370d23cb configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-aa23526c-0038-4a6b-a54f-10198a4e9d1f, play-fork-run-b36ef58a-5669-4968-a764-56f8370d23cb
+Taking next connection to: 57209
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 57209
