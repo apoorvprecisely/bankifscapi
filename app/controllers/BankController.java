@@ -1,11 +1,13 @@
 package controllers;
 
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import models.Banks;
 import models.Banks_Branches;
 import play.db.Database;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
+import scala.util.parsing.json.JSONObject;
 
 import javax.inject.Inject;
 import java.sql.SQLException;
@@ -28,7 +30,7 @@ public class BankController extends Controller
         }
         else
         {
-            return notFound();
+            return returnErrorResult();
         }
     }
 
@@ -41,7 +43,7 @@ public class BankController extends Controller
         }
         else
         {
-            return notFound();
+            return returnErrorResult();
         }
     }
 
@@ -54,7 +56,14 @@ public class BankController extends Controller
         }
         else
         {
-            return notFound();
+            return returnErrorResult();
         }
+    }
+
+    private Result returnErrorResult()
+    {
+        ObjectNode result = Json.newObject();
+        result.put("status", "404 Not Found");
+        return notFound(result);
     }
 }

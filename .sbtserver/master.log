@@ -28494,3 +28494,576 @@ Running task... Cancel: sbt.server.ServerTaskCancellation@8969154, check cycles:
 Total time: 0 s, completed 20 May, 2016 5:20:13 PM
 > server-post-command-cleanup
 > server-handle-next-server-request
+> {file:/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@5e8eec0d, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/application.conf,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/application.conf)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/evolutions,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/evolutions)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/logback.xml,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/logback.xml)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/routes,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/routes)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/evolutions/default,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/evolutions/default)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/evolutions/default/1.sql,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed 20 May, 2016 5:24:59 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7099b31c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Read from stdout: Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@728f40fc directly...
+Read from stdout: /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: ')' expected
+/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: ')' expected
+Read from stdout: /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: ';' expected
+/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: ';' expected
+Read from stdout: /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: illegal start of expression
+/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: illegal start of expression
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed 20 May, 2016 5:29:53 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2fc0c7cd, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Read from stdout: Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@408a6d06 directly...
+Read from stdout: /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: ')' expected
+/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: ')' expected
+Read from stdout: /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: ';' expected
+/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: ';' expected
+Read from stdout: /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: illegal start of expression
+/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: illegal start of expression
+Read from stdout: /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: ';' expected
+/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: ';' expected
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed 20 May, 2016 5:30:02 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1424a8da, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Read from stdout: Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@75456d36 directly...
+Read from stdout: /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: ')' expected
+/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: ')' expected
+Read from stdout: /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: ';' expected
+/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: ';' expected
+Read from stdout: /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: illegal start of expression
+/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: illegal start of expression
+Read from stdout: /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: ';' expected
+/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:57: ';' expected
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed 20 May, 2016 5:30:47 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@5a802dcf, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed 20 May, 2016 5:36:14 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 5
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@2b40d606, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:36:14 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@22a00b60, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:36:14 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/}myProject/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@6ffc2ef9, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:36:19 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@35c16054, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:36:21 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@712b409, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Read from stdout: Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@7a038146 directly...
+Read from stdout: /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:59: <identifier> expected
+/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:59: <identifier> expected
+Read from stdout: /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:59: not a statement
+/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java:59: not a statement
+Read from stdout: errorJson
+errorJson
+Read from stdout: (compile:compileIncremental) javac returned nonzero exit code
+(compile:compileIncremental) javac returned nonzero exit code
+Total time: 1 s, completed 20 May, 2016 5:37:06 PM
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@353f96ff, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Read from stdout: Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@75c22933 directly...
+Java compilation took 0.216584251 s
+Java analysis took 0.016972677 s
+Java compile + analysis took 0.239947791 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 20 May, 2016 5:38:23 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 6
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@6f2a09cb, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:38:23 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@120d0954, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:38:24 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/}myProject/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@483ea600, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:38:27 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@6187f24d, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:38:29 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2a22957a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Read from stdout: Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@25e9aa4d directly...
+Java compilation took 0.195479051 s
+Java analysis took 0.003205816 s
+Java compile + analysis took 0.206716524 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 20 May, 2016 5:38:44 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 7
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@4e1469db, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:38:44 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@50f1fe5, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:38:44 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/}myProject/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@820e362, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:38:47 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@74f9089c, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:38:50 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3ae31c0a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Read from stdout: Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@2e99e538 directly...
+Java compilation took 0.280663159 s
+Java analysis took 0.003663069 s
+Java compile + analysis took 0.293326968 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 20 May, 2016 5:38:54 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 8
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@799438c6, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:38:54 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@7121537c, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:38:54 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3f3994ff, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Read from stdout: Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@33bed1d1 directly...
+Java compilation took 0.128170139 s
+Java analysis took 0.006454945 s
+Java compile + analysis took 0.140289485 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 20 May, 2016 5:38:55 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 8
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@2cf871d1, check cycles: false
+Exception in thread "sbt-bg-threads-8" java.lang.Error: java.lang.InterruptedException: sleep interrupted
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1148)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.InterruptedException: sleep interrupted
+	at java.lang.Thread.sleep(Native Method)
+	at play.sbt.forkrun.PlayForkProcess$.timedWaitFor(PlayForkProcess.scala:80)
+	at play.sbt.forkrun.PlayForkProcess$.play$sbt$forkrun$PlayForkProcess$$stop$1(PlayForkProcess.scala:54)
+	at play.sbt.forkrun.PlayForkProcess$.run(PlayForkProcess.scala:70)
+	at play.sbt.forkrun.PlayForkProcess$.apply(PlayForkProcess.scala:35)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:108)
+	at play.sbt.forkrun.PlayForkRun$$anonfun$backgroundForkRunTask$1$$anonfun$apply$7$$anonfun$apply$8$$anonfun$apply$9.apply(PlayForkRun.scala:107)
+	at sbt.BackgroundThreadPool$$anonfun$1.apply$mcV$sp(AbstractBackgroundJobService.scala:134)
+	at sbt.BackgroundThreadPool$BackgroundRunnable.run(AbstractBackgroundJobService.scala:68)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	... 2 more
+Total time: 0 s, completed 20 May, 2016 5:38:55 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 9
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@3687bd4c, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:38:55 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@20f714fd, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:38:55 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/}myProject/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@55516831, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:39:01 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@5e7aa22b, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:39:04 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@50c328c1, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/application.conf,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/application.conf)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/evolutions,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/evolutions)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/logback.xml,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/logback.xml)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/routes,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/routes)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/evolutions/default,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/evolutions/default)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/evolutions/default/1.sql,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed 20 May, 2016 5:39:50 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3bc33d25, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/app/controllers/BankController.java)
+
+Read from stdout: Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Compiling 1 Java source to /Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes...
+Attempting to call com.sun.tools.javac.api.JavacTool@718975f6 directly...
+Java compilation took 0.202392138 s
+Java analysis took 0.00384078 s
+Java compile + analysis took 0.218576776 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 2 s, completed 20 May, 2016 5:40:59 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> jobStop 10
+Evaluating tasks: *:jobStop
+Running task... Cancel: sbt.server.ServerTaskCancellation@699a038c, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:40:59 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@32ccda60, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:40:59 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/}myProject/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@43ee3149, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:41:03 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@1ed02629, check cycles: false
+Total time: 0 s, completed 20 May, 2016 5:41:06 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@aba05e4, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/application.conf,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/application.conf)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/evolutions,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/evolutions)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/logback.xml,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/logback.xml)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/routes,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/routes)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/evolutions/default,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/evolutions/default)
+	(/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/conf/evolutions/default/1.sql,/Users/apoorv/Downloads/activator-dist-1.3.10/bin/bankapi/target/scala-2.11/classes/evolutions/default/1.sql)
+Total time: 1 s, completed 20 May, 2016 5:41:08 PM
+> server-post-command-cleanup
+> server-handle-next-server-request
