@@ -62,7 +62,7 @@ $( "#cityNames" ).autocomplete({
     $.getJSON(url, function(options) {
 console.log(JSON.stringify(options));
 
-var ul = $('<ul>').appendTo('body');
+var ul = $('<br/><ul>').appendTo('body');
 $(options).each(function(index, item) {
 
 
