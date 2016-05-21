@@ -22,7 +22,7 @@ public class Filters implements HttpFilters {
     GzipFilter gzipFilter;
     public EssentialFilter[] filters() {
         return new EssentialFilter[] { gzipFilter.asJava() };
-    }s
+    }
     /**
      * @param env Basic environment settings for the current application.
      * @param exampleFilter A demonstration filter that adds a header to
