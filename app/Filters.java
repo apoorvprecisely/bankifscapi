@@ -1,11 +1,10 @@
-import javax.inject.*;
-import play.*;
 import play.filters.gzip.GzipFilter;
-import play.mvc.EssentialFilter;
 import play.http.HttpFilters;
-import play.mvc.*;
+import play.mvc.EssentialFilter;
 
-import filters.ExampleFilter;
+import javax.inject.Inject;
+import javax.inject.Singleton;
+
 
 /**
  * This class configures filters that run on every request. This
@@ -19,20 +18,14 @@ import filters.ExampleFilter;
 @Singleton
 public class Filters implements HttpFilters {
 
-    private final Environment env;
-    private final EssentialFilter exampleFilter;
-    @Inject
+ @Inject
     GzipFilter gzipFilter;
     public EssentialFilter[] filters() {
         return new EssentialFilter[] { gzipFilter.asJava() };
-    }
+    }s
     /**
      * @param env Basic environment settings for the current application.
      * @param exampleFilter A demonstration filter that adds a header to
      */
-    @Inject
-    public Filters(Environment env, ExampleFilter exampleFilter) {
-        this.env = env;
-        this.exampleFilter = exampleFilter;
-    }
+
 }
