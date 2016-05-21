@@ -49,25 +49,59 @@ select.appendChild(el);
 });
 });
 
-function leaveChange(dropdown) {
-    var value = dropdown.options[dropdown.selectedIndex].value;
-var myjson;
-var dropurl="/api/bank/"+value+"/city";
-$.getJSON(dropurl, function(json){
+// function leaveChange(dropdown) {
+//     var value = dropdown.options[dropdown.selectedIndex].value;
+// var myjson;
+// var dropurl="/api/bank/"+value+"/city";
+// $.getJSON(dropurl, function(json){
 
-var myjson = $.map(json, function(i){
-return {
-label: i.city,
-value: i.city
-};
+// var myjson = $.map(json, function(i){
+// return {
+// label: i.city,
+// value: i.city
+// };
 
 
-});
-$( "#cityNames" ).autocomplete({
+// });
+
+// });
+// }
+
+
+  $(function() {
+    function log( message ) {
+      $( "<div>" ).text( message ).prependTo( "#log" );
+      $( "#log" ).scrollTop( 0 );
+    }
+$( "#city" ).autocomplete({
    delay: 200,
-   source: myjson,
-   select: function(event,ui)
+      source: function( request, response ) {
+        var select = document.getElementById("banklist");
+        var value = select.options[select.selectedIndex].value;
+$.ajax({
+          url: "/api/bank/"+value+"/city",
+          dataType: "json",
+          data: {
+            starts_with: request.term
+          },
+          success: function( data ) {
+console.log(JSON.stringify(data));
+
+   response($.map(data, function(i) {
+           console.log(i.city);
+
+                                return {
+                                    label : i.city,
+                                    value : i.city
+                                }
+                            }));        }
+        });
+      },
+      minLength: 3,
+       select: function(event,ui)
    {
+            var select = document.getElementById("banklist");
+        var value = select.options[select.selectedIndex].value;
     var city=ui.item.value;
     var url="/api/bank/"+value+"/city/"+city+"/branch";
     $.getJSON(url, function(options) {
@@ -88,17 +122,58 @@ $(options).each(function(index, item) {
 
 });
 
-   }
+   },
+      open: function() {
+        $( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
+      },
+      close: function() {
+        $( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
+      }
+    });
 });
-});
-}
+
+
+
+
+ // $( "#city" ).autocomplete({
+ //      source: function( request, response ) {
+ //        var select = document.getElementById("banklist");
+ //        var value = select.options[select.selectedIndex].value;
+ //        $.ajax({
+ //          url: "/api/bank/"+value+"city",
+ //          dataType: "jsonp",
+ //          data: {
+ //            starts_with: request.term
+ //          },
+ //          success: function( data ) {
+ //            response( data );
+ //          }
+ //        });
+ //      },
+ //      minLength: 3,
+ //      select: function( event, ui ) {
+ //        log( ui.item ?
+ //          "Selected: " + ui.item.label :
+ //          "Nothing selected, input was " + this.value);
+ //      },
+ //      open: function() {
+ //        $( this ).removeClass( "ui-corner-all" ).addClass( "ui-corner-top" );
+ //      },
+ //      close: function() {
+ //        $( this ).removeClass( "ui-corner-top" ).addClass( "ui-corner-all" );
+ //      }
+ //    });
 
 </script>
 
-<select id="banklist" onchange="leaveChange(this)">
-    <option>Choose a bank</option>
+<!-- <select id="banklist" onchange="leaveChange(this)">
+ -->    
+<select id="banklist">
+<option>Choose a bank</option>
 </select>
-City <input id="cityNames" type="text" placeholder="Cities for the bank" name="code">
-<br/><br/><br/><br/><br/>
+<!-- City <input id="cityNames" type="text" placeholder="Cities for the bank" name="code">
+ -->
+<input id="city" type="text" placeholder="Cities for the bank" name="code">
+ <br/><br/><br/><br/><br/>
 </body>
 </html>

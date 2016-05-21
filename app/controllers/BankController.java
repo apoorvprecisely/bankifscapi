@@ -34,9 +34,17 @@ public class BankController extends Controller
         }
     }
 
-    public Result fetchCitiesForBank(String bankName) throws SQLException
+    public Result fetchCitiesForBank(String starts_with, String bankName) throws SQLException
     {
-        List<Banks_Branches> citiesForBank = Banks_Branches.find.select("city").setDistinct(true).where().eq("bank_name", bankName).findList();
+        List<Banks_Branches> citiesForBank;
+        if (starts_with == null)
+        {
+            citiesForBank = Banks_Branches.find.select("city").setDistinct(true).where().eq("bank_name", bankName).findList();
+        }
+        else
+        {
+            citiesForBank = Banks_Branches.find.select("city").setDistinct(true).where().eq("bank_name", bankName).where().startsWith("city", starts_with.toUpperCase()).findList();
+        }
         if (citiesForBank.size() > 0)
         {
             return ok(Json.toJson(citiesForBank));

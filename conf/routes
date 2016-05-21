@@ -13,5 +13,5 @@ GET     /message                    controllers.AsyncController.message
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
 
 GET     /api/bank controllers.BankController.fetchBanks
-GET     /api/bank/:bank_name/city controllers.BankController.fetchCitiesForBank(bank_name:String)
+GET     /api/bank/:bank_name/city controllers.BankController.fetchCitiesForBank(starts_with:String ?=null, bank_name:String)
 GET     /api/bank/:bank_name/city/:city_name/branch controllers.BankController.fetchBranches(bank_name:String,city_name:String)
